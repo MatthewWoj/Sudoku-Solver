@@ -1,0 +1,234 @@
+﻿<Window x:Class="Sudoku.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sudoku"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="1280" FontSize="33" PreviewKeyDown="Window_PreviewKeyDown">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Margin="450,0,20,0"  Text="Sudoku Solver" Width="Auto" Height="Auto"/>
+            <TextBox FontSize="20" BorderThickness="0" Margin="280,0,0,0" Text="Allowed Characters:" />
+            <TextBox  FontSize="20" Margin="0,0,0,0" BorderThickness="0" x:Name="tbxAvailableCharacter"  TextChanged="TbxAvailableCharacter_TextChanged">
+                123456789
+            </TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,0,706,0">
+            <Grid x:Name="grdSudoku" Height="Auto" Width="Auto" HorizontalAlignment="Left" Margin="10, 10, 0, 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <local:XamlSudokuSquare x:Name="tbx0_0" Grid.Column="0" Grid.Row="0" />
+                <local:XamlSudokuSquare x:Name="tbx0_1" Grid.Column="1" Grid.Row="0" />
+                <local:XamlSudokuSquare x:Name="tbx0_2" Grid.Column="2" Grid.Row="0" />
+                <local:XamlSudokuSquare x:Name="tbx0_3" Grid.Column="3" Grid.Row="0" />
+                <local:XamlSudokuSquare x:Name="tbx0_4" Grid.Column="4" Grid.Row="0" />
+                <local:XamlSudokuSquare x:Name="tbx0_5" Grid.Column="5" Grid.Row="0" />
+                <local:XamlSudokuSquare x:Name="tbx0_6" Grid.Column="6" Grid.Row="0" />
+                <local:XamlSudokuSquare x:Name="tbx0_7" Grid.Column="7" Grid.Row="0" />
+                <local:XamlSudokuSquare x:Name="tbx0_8" Grid.Column="8" Grid.Row="0" />
+                <local:XamlSudokuSquare x:Name="tbx1_0" Grid.Column="0" Grid.Row="1" />
+                <local:XamlSudokuSquare x:Name="tbx1_1" Grid.Column="1" Grid.Row="1" />
+                <local:XamlSudokuSquare x:Name="tbx1_2" Grid.Column="2" Grid.Row="1" />
+                <local:XamlSudokuSquare x:Name="tbx1_3" Grid.Column="3" Grid.Row="1" />
+                <local:XamlSudokuSquare x:Name="tbx1_4" Grid.Column="4" Grid.Row="1" />
+                <local:XamlSudokuSquare x:Name="tbx1_5" Grid.Column="5" Grid.Row="1" />
+                <local:XamlSudokuSquare x:Name="tbx1_6" Grid.Column="6" Grid.Row="1" />
+                <local:XamlSudokuSquare x:Name="tbx1_7" Grid.Column="7" Grid.Row="1" />
+                <local:XamlSudokuSquare x:Name="tbx1_8" Grid.Column="8" Grid.Row="1" />
+                <local:XamlSudokuSquare x:Name="tbx2_0" Grid.Column="0" Grid.Row="2" />
+                <local:XamlSudokuSquare x:Name="tbx2_1" Grid.Column="1" Grid.Row="2" />
+                <local:XamlSudokuSquare x:Name="tbx2_2" Grid.Column="2" Grid.Row="2" />
+                <local:XamlSudokuSquare x:Name="tbx2_3" Grid.Column="3" Grid.Row="2" />
+                <local:XamlSudokuSquare x:Name="tbx2_4" Grid.Column="4" Grid.Row="2" />
+                <local:XamlSudokuSquare x:Name="tbx2_5" Grid.Column="5" Grid.Row="2" />
+                <local:XamlSudokuSquare x:Name="tbx2_6" Grid.Column="6" Grid.Row="2" />
+                <local:XamlSudokuSquare x:Name="tbx2_7" Grid.Column="7" Grid.Row="2" />
+                <local:XamlSudokuSquare x:Name="tbx2_8" Grid.Column="8" Grid.Row="2" />
+                <local:XamlSudokuSquare x:Name="tbx3_0" Grid.Column="0" Grid.Row="3" />
+                <local:XamlSudokuSquare x:Name="tbx3_1" Grid.Column="1" Grid.Row="3" />
+                <local:XamlSudokuSquare x:Name="tbx3_2" Grid.Column="2" Grid.Row="3" />
+                <local:XamlSudokuSquare x:Name="tbx3_3" Grid.Column="3" Grid.Row="3" />
+                <local:XamlSudokuSquare x:Name="tbx3_4" Grid.Column="4" Grid.Row="3" />
+                <local:XamlSudokuSquare x:Name="tbx3_5" Grid.Column="5" Grid.Row="3" />
+                <local:XamlSudokuSquare x:Name="tbx3_6" Grid.Column="6" Grid.Row="3" />
+                <local:XamlSudokuSquare x:Name="tbx3_7" Grid.Column="7" Grid.Row="3" />
+                <local:XamlSudokuSquare x:Name="tbx3_8" Grid.Column="8" Grid.Row="3" />
+                <local:XamlSudokuSquare x:Name="tbx4_0" Grid.Column="0" Grid.Row="4" />
+                <local:XamlSudokuSquare x:Name="tbx4_1" Grid.Column="1" Grid.Row="4" />
+                <local:XamlSudokuSquare x:Name="tbx4_2" Grid.Column="2" Grid.Row="4" />
+                <local:XamlSudokuSquare x:Name="tbx4_3" Grid.Column="3" Grid.Row="4" />
+                <local:XamlSudokuSquare x:Name="tbx4_4" Grid.Column="4" Grid.Row="4" />
+                <local:XamlSudokuSquare x:Name="tbx4_5" Grid.Column="5" Grid.Row="4" />
+                <local:XamlSudokuSquare x:Name="tbx4_6" Grid.Column="6" Grid.Row="4" />
+                <local:XamlSudokuSquare x:Name="tbx4_7" Grid.Column="7" Grid.Row="4" />
+                <local:XamlSudokuSquare x:Name="tbx4_8" Grid.Column="8" Grid.Row="4" />
+                <local:XamlSudokuSquare x:Name="tbx5_0" Grid.Column="0" Grid.Row="5" />
+                <local:XamlSudokuSquare x:Name="tbx5_1" Grid.Column="1" Grid.Row="5" />
+                <local:XamlSudokuSquare x:Name="tbx5_2" Grid.Column="2" Grid.Row="5" />
+                <local:XamlSudokuSquare x:Name="tbx5_3" Grid.Column="3" Grid.Row="5" />
+                <local:XamlSudokuSquare x:Name="tbx5_4" Grid.Column="4" Grid.Row="5" />
+                <local:XamlSudokuSquare x:Name="tbx5_5" Grid.Column="5" Grid.Row="5" />
+                <local:XamlSudokuSquare x:Name="tbx5_6" Grid.Column="6" Grid.Row="5" />
+                <local:XamlSudokuSquare x:Name="tbx5_7" Grid.Column="7" Grid.Row="5" />
+                <local:XamlSudokuSquare x:Name="tbx5_8" Grid.Column="8" Grid.Row="5" />
+                <local:XamlSudokuSquare x:Name="tbx6_0" Grid.Column="0" Grid.Row="6" />
+                <local:XamlSudokuSquare x:Name="tbx6_1" Grid.Column="1" Grid.Row="6" />
+                <local:XamlSudokuSquare x:Name="tbx6_2" Grid.Column="2" Grid.Row="6" />
+                <local:XamlSudokuSquare x:Name="tbx6_3" Grid.Column="3" Grid.Row="6" />
+                <local:XamlSudokuSquare x:Name="tbx6_4" Grid.Column="4" Grid.Row="6" />
+                <local:XamlSudokuSquare x:Name="tbx6_5" Grid.Column="5" Grid.Row="6" />
+                <local:XamlSudokuSquare x:Name="tbx6_6" Grid.Column="6" Grid.Row="6" />
+                <local:XamlSudokuSquare x:Name="tbx6_7" Grid.Column="7" Grid.Row="6" />
+                <local:XamlSudokuSquare x:Name="tbx6_8" Grid.Column="8" Grid.Row="6" />
+                <local:XamlSudokuSquare x:Name="tbx7_0" Grid.Column="0" Grid.Row="7" />
+                <local:XamlSudokuSquare x:Name="tbx7_1" Grid.Column="1" Grid.Row="7" />
+                <local:XamlSudokuSquare x:Name="tbx7_2" Grid.Column="2" Grid.Row="7" />
+                <local:XamlSudokuSquare x:Name="tbx7_3" Grid.Column="3" Grid.Row="7" />
+                <local:XamlSudokuSquare x:Name="tbx7_4" Grid.Column="4" Grid.Row="7" />
+                <local:XamlSudokuSquare x:Name="tbx7_5" Grid.Column="5" Grid.Row="7" />
+                <local:XamlSudokuSquare x:Name="tbx7_6" Grid.Column="6" Grid.Row="7" />
+                <local:XamlSudokuSquare x:Name="tbx7_7" Grid.Column="7" Grid.Row="7" />
+                <local:XamlSudokuSquare x:Name="tbx7_8" Grid.Column="8" Grid.Row="7" />
+                <local:XamlSudokuSquare x:Name="tbx8_0" Grid.Column="0" Grid.Row="8" />
+                <local:XamlSudokuSquare x:Name="tbx8_1" Grid.Column="1" Grid.Row="8" />
+                <local:XamlSudokuSquare x:Name="tbx8_2" Grid.Column="2" Grid.Row="8" />
+                <local:XamlSudokuSquare x:Name="tbx8_3" Grid.Column="3" Grid.Row="8" />
+                <local:XamlSudokuSquare x:Name="tbx8_4" Grid.Column="4" Grid.Row="8" />
+                <local:XamlSudokuSquare x:Name="tbx8_5" Grid.Column="5" Grid.Row="8" />
+                <local:XamlSudokuSquare x:Name="tbx8_6" Grid.Column="6" Grid.Row="8" />
+                <local:XamlSudokuSquare x:Name="tbx8_7" Grid.Column="7" Grid.Row="8" />
+                <local:XamlSudokuSquare x:Name="tbx8_8" Grid.Column="8" Grid.Row="8" />
+
+                <Border BorderThickness="3" Grid.ColumnSpan="3" Grid.RowSpan="3"  Width="180" Height="180" BorderBrush="Black"></Border>
+                <Border BorderThickness="3" Grid.Column="3"  Grid.ColumnSpan="3" Grid.RowSpan="3"  Width="180" Height="180" BorderBrush="Black"></Border>
+                <Border BorderThickness="3" Grid.Column="6"  Grid.ColumnSpan="3" Grid.RowSpan="3"  Width="180" Height="180" BorderBrush="Black"></Border>
+                <Border BorderThickness="3" Grid.Row="3" Grid.ColumnSpan="3" Grid.RowSpan="3"  Width="180" Height="180" BorderBrush="Black"></Border>
+                <Border BorderThickness="3" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="3" Grid.RowSpan="3"  Width="180" Height="180" BorderBrush="Black"></Border>
+                <Border BorderThickness="3" Grid.Row="3" Grid.Column="6"  Grid.ColumnSpan="3" Grid.RowSpan="3"  Width="180" Height="180" BorderBrush="Black"></Border>
+                <Border BorderThickness="3" Grid.Row="6" Grid.ColumnSpan="3" Grid.RowSpan="3"  Width="180" Height="180" BorderBrush="Black"></Border>
+                <Border BorderThickness="3" Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="3" Grid.RowSpan="3"  Width="180" Height="180" BorderBrush="Black"></Border>
+                <Border BorderThickness="3" Grid.Row="6" Grid.Column="6"  Grid.ColumnSpan="3" Grid.RowSpan="3"  Width="180" Height="180" BorderBrush="Black"></Border>
+            </Grid>
+            <!--<StackPanel Orientation="Vertical" Margin="20, 11, 0, 0" >
+
+                <Button x:Name="btnTest" Click="btnTest_Click" Padding="20,4,20,4" Margin="4">
+                	Load Game!
+                </Button>
+                <Button x:Name="btnSolve" Padding="20,4,20,4" Click="btnSolve_Click" Margin="4">
+                    Solve!
+                </Button>
+                <Button x:Name="btnBruteForce" Padding="20,4,20,4" Margin="4" Click="btnBruteForce_Click">
+                	Brute Force
+                </Button>
+                <Button x:Name="btnHint" Padding="20,4,20,4" Margin="4" Click="btnHint_Click">
+                	Hint
+                </Button>
+                <Button x:Name="btnClearNotes" Padding="20,4,20,4" Click="btnClearNotes_Click" Margin="4">
+                    Clear Notes!
+                </Button>
+                <Button x:Name="btnRandomPuzzle" Padding="20,4,20,4" Click="btnRandomPuzzle_Click"  Margin="4"> 
+                    Random
+                </Button>
+                <Button x:Name="btnClearAll" Padding="20,4,20,4" Click="btnClearAll_Click" Margin="4">
+                    Clear All
+                </Button>
+            </StackPanel>-->
+
+        </StackPanel>
+
+        <Border Margin ="571,-1070,27,-200" CornerRadius="6" BorderBrush="Gray" BorderThickness="2" Height="227" >
+            <StackPanel Orientation="Vertical" Height="221" VerticalAlignment="Top">
+                <TextBlock FontSize="40" Width="auto" Height="Auto" ><Run Text="Features"/><Run Text="                              "/></TextBlock>
+                <StackPanel Orientation="Vertical" Width="auto" Height="auto">
+                    <TextBlock FontSize="25" Height="51"><Run Text="Load Options:"/><Run FontSize="20" Text="                       "/><Run FontSize="20" Text="      "/><Run FontSize="20" Text="Ctrl+Z = Undo, Ctrl+Y = Redo                  "/></TextBlock>
+
+                </StackPanel>
+                <StackPanel Margin="-270,0,100,406" Height="auto" Width="250">
+                    <Button x:Name="btnTest" Click="BtnTest_Click" Height="auto">
+                        Sample
+                    </Button>
+                    <Button x:Name="btnRandomPuzzle" Padding="20,4,20,4" Click="btnRandomPuzzle_Click" Height="50" Margin="0,4">
+                        Random
+                    </Button>
+
+
+
+
+                </StackPanel>
+                <TextBox BorderThickness="0" FontSize="20" HorizontalAlignment="Left" Height="138" Margin="310,-890,0,0" TextWrapping="Wrap" Text="Modifiers:&#xA;Ctrl = Medium&#xA;Ctrl+Shift = Hard&#xA;Ctrl+Shift+Alt = Expert&#xA;" Width="281" TextChanged="TextBox_TextChanged"/>
+
+            </StackPanel>
+
+        </Border>
+        <StackPanel  Height="153" Margin="462,0,0,0" Width="590"/>
+        <Border CornerRadius="6" BorderBrush="Gray" BorderThickness="2" Height="227" Margin="571,-725,27,0" >
+            <StackPanel Orientation="Vertical" Height="225" VerticalAlignment="Top" Margin="0,0,0,-2">
+                <TextBlock FontSize="25" Width="auto" Height="Auto" ><Run Text="Solve Options:"/><Run Text="                         Saves:"/></TextBlock>
+                <Button x:Name="btnSolve"  Padding="20,4,20,4" Click="btnSolve_Click" Margin="24,14,394,0">
+                    Apply Logic
+                </Button>
+                <Button x:Name="btnBruteForce" Padding="20,4,20,4" Margin="24,4,394,4" Click="btnBruteForce_Click">
+                    Brute Force
+                </Button>
+                <Button x:Name="btnHint" Padding="20,4,20,4" Margin="24,0,394,4" Click="btnHint_Click">
+                    Hint
+                </Button>
+                <Button x:Name="btnSaveGame" Padding="20,4,20,4" Margin="354,-292,50,4" Height="54" Click="btnSaveGame_Click" >
+                    Save Board
+                </Button>
+                <Button x:Name="btnLoadSavedGame" Padding="20,4,20,4" Margin="354,-175,50,4" Height="54" Click="btnLoadSavedGame_Click"  >
+                    Load Save
+                </Button>
+				<Button x:Name="Ai" Padding="20,4,20,4" Margin="354,-60,50,4" Click="Ai_Click">
+					Super Solver
+				</Button>
+            </StackPanel>
+        </Border>
+        <StackPanel  Height="153" Margin="462,0,0,0" Width="590"/>
+        <Border CornerRadius="6" BorderBrush="Gray" BorderThickness="2" Height="100" Margin="571,-709,27,0" >
+            <StackPanel Orientation="Vertical" Height="225" VerticalAlignment="Top" Margin="0,0,0,-2">
+
+                <TextBlock Text="Board Options:" FontSize="25" Width="auto" Height="Auto" >
+
+                </TextBlock>
+
+                <Button x:Name="btnClearAll" Padding="20,4,20,4" Click="btnClearAll_Click" Margin="23,4,393,4">
+                    Clear All
+                </Button>
+
+                <Button FontSize="25" x:Name="btnClearNotes" Padding="20,4,20,4" Click="btnClearNotes_Click" Margin="282,-60,205,4" Height="50">
+                    Clear Notes
+                </Button>
+                <Button FontSize="25" x:Name="btnShowNotes" Padding="20,4,16,4" Margin="470,-60,22,4" Height="50" Click="btnShowNotes_Click">
+                    Show Notes
+                </Button>
+            </StackPanel>
+        </Border>
+        <TextBox HorizontalAlignment="Left" Height="40" Margin="498,0,0,0" TextWrapping="Wrap" Text="TextBox" Width="143"/>
+
+    </StackPanel>
+
+
+</Window>

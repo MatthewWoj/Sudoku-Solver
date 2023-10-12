@@ -1,0 +1,36 @@
+C:\Users\Pemm\Source\Repos\SudokuProjectW\bin\Debug\Sudoku.exe.config
+C:\Users\Pemm\Source\Repos\SudokuProjectW\bin\Debug\Sudoku.exe
+C:\Users\Pemm\Source\Repos\SudokuProjectW\bin\Debug\Sudoku.pdb
+C:\Users\Pemm\Source\Repos\SudokuProjectW\obj\Debug\Sudoku.csproj.AssemblyReference.cache
+C:\Users\Pemm\Source\Repos\SudokuProjectW\obj\Debug\MainWindow.g.cs
+C:\Users\Pemm\Source\Repos\SudokuProjectW\obj\Debug\SudokuSquare.g.cs
+C:\Users\Pemm\Source\Repos\SudokuProjectW\obj\Debug\App.g.cs
+C:\Users\Pemm\Source\Repos\SudokuProjectW\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Pemm\Source\Repos\SudokuProjectW\obj\Debug\Sudoku_MarkupCompile.cache
+C:\Users\Pemm\Source\Repos\SudokuProjectW\obj\Debug\Sudoku_MarkupCompile.lref
+C:\Users\Pemm\Source\Repos\SudokuProjectW\obj\Debug\MainWindow.baml
+C:\Users\Pemm\Source\Repos\SudokuProjectW\obj\Debug\SudokuSquare.baml
+C:\Users\Pemm\Source\Repos\SudokuProjectW\obj\Debug\Sudoku.g.resources
+C:\Users\Pemm\Source\Repos\SudokuProjectW\obj\Debug\Sudoku.Properties.Resources.resources
+C:\Users\Pemm\Source\Repos\SudokuProjectW\obj\Debug\Sudoku.csproj.GenerateResource.cache
+C:\Users\Pemm\Source\Repos\SudokuProjectW\obj\Debug\Sudoku.csproj.CoreCompileInputs.cache
+C:\Users\Pemm\Source\Repos\SudokuProjectW\obj\Debug\Sudoku.exe
+C:\Users\Pemm\Source\Repos\SudokuProjectW\obj\Debug\Sudoku.pdb
+C:\Users\Pemm\Desktop\New folder\bin\Debug\Sudoku.exe.config
+C:\Users\Pemm\Desktop\New folder\bin\Debug\Sudoku.exe
+C:\Users\Pemm\Desktop\New folder\bin\Debug\Sudoku.pdb
+C:\Users\Pemm\Desktop\New folder\obj\Debug\Sudoku.csproj.AssemblyReference.cache
+C:\Users\Pemm\Desktop\New folder\obj\Debug\MainWindow.g.cs
+C:\Users\Pemm\Desktop\New folder\obj\Debug\SudokuSquare.g.cs
+C:\Users\Pemm\Desktop\New folder\obj\Debug\App.g.cs
+C:\Users\Pemm\Desktop\New folder\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Pemm\Desktop\New folder\obj\Debug\Sudoku_MarkupCompile.cache
+C:\Users\Pemm\Desktop\New folder\obj\Debug\Sudoku_MarkupCompile.lref
+C:\Users\Pemm\Desktop\New folder\obj\Debug\MainWindow.baml
+C:\Users\Pemm\Desktop\New folder\obj\Debug\SudokuSquare.baml
+C:\Users\Pemm\Desktop\New folder\obj\Debug\Sudoku.g.resources
+C:\Users\Pemm\Desktop\New folder\obj\Debug\Sudoku.Properties.Resources.resources
+C:\Users\Pemm\Desktop\New folder\obj\Debug\Sudoku.csproj.GenerateResource.cache
+C:\Users\Pemm\Desktop\New folder\obj\Debug\Sudoku.csproj.CoreCompileInputs.cache
+C:\Users\Pemm\Desktop\New folder\obj\Debug\Sudoku.exe
+C:\Users\Pemm\Desktop\New folder\obj\Debug\Sudoku.pdb
